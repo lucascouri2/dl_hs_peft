@@ -1,0 +1,9 @@
+experiment,macro_f1,accuracy
+llm_lora_cabrita,0.9296,0.9297
+llm_lora_llama,0.9262,0.9263
+slm_finetuning_bertimbauu,0.9131,0.9131
+slm_finetuning_xlmr,0.8954,0.8954
+llm_fewshot_llama,0.7554,0.7594
+llm_prompt_cabrita,0.7027,0.7051
+llm_prompt_llama,0.6456,0.6589
+llm_fewshot_cabrita,0.4441,0.5537
