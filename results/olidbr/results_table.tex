@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\caption{Comparação de métodos PEFT para detecção de discurso de ódio}
+\label{tab:peft_comparison}
+\begin{tabular}{lcccccc}
+\toprule
+Método & Macro-F1 & Acurácia & ROC-AUC & ECE & F1-0 & F1-1 \\
+\midrule
+llm_lora_llama & \textbf{0.702} & \textbf{0.856} & 0.847 & 0.086 & 0.489 & \textbf{0.916} \\
+slm_finetuning_bertimbau & 0.698 & 0.839 & 0.843 & 0.097 & \textbf{0.492} & 0.905 \\
+llm_lora_cabrita & 0.689 & 0.847 & \textbf{0.848} & 0.095 & 0.468 & 0.911 \\
+llm_fewshot_llama & 0.560 & 0.730 & 0.499 & \textbf{0.037} & 0.288 & 0.833 \\
+llm_prompt_cabrita & 0.534 & 0.810 & 0.595 & 0.117 & 0.175 & 0.893 \\
+slm_finetuning_xlmr & 0.503 & 0.823 & 0.496 & 0.202 & 0.105 & 0.902 \\
+llm_fewshot_cabrita & 0.502 & 0.816 & 0.526 & 0.808 & 0.106 & 0.897 \\
+llm_prompt_llama & 0.483 & 0.833 & 0.531 & 0.208 & 0.058 & 0.908 \\
+\bottomrule
+\end{tabular}
+\end{table}
